@@ -1,0 +1,121 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}This is the title{% endblock %}
+
+{% block content %}
+    <main id="main">
+
+        <!-- Hero Section - Homepage -->
+        <section id="hero" class="hero">
+
+            <img src="{% static 'homepage/img/hero-bg.png' %}" alt="" data-aos="fade-in">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10">
+                        <h2 data-aos="fade-up" data-aos-delay="100">راهکارهای پیشرو برای کسب‌وکار شما</h2>
+                        <p data-aos="fade-up" data-aos-delay="200">ما ارائه دهنده خدمات دکل مهاری، شبکه، سرور، نرم‌افزار، دوربین، امنیت ،VoIP، طراحی سایت و تولید اپلیکیشن هستیم</p>
+                    </div>
+                    <div class="col-lg-5">
+                        <form action="#" class="sign-up-form d-flex" data-aos="fade-up" data-aos-delay="300">
+                            <input type="text" class="form-control" placeholder="نشانی ایمیل شما" required>
+                            <input type="submit" class="btn btn-primary" value="ثبت نام خبرنامه">
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </section><!-- End Hero Section -->
+
+        <!-- Clients Section - Home Page -->
+        <section id="clients" class="clients">
+
+            <div class="container-fluid" data-aos="fade-up">
+
+                <div class="row gy-4">
+
+                    <div class="col-xl-2 col-md-3 col-6 client-logo">
+                        <img src="{% static 'homepage/img/vendors/vendor-1.png' %}" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-xl-2 col-md-3 col-6 client-logo">
+                        <img src="{% static 'homepage/img/vendors/vendor-2.png' %}" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-xl-2 col-md-3 col-6 client-logo">
+                        <img src="{% static 'homepage/img/vendors/vendor-3.png' %}" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-xl-2 col-md-3 col-6 client-logo">
+                        <img src="{% static 'homepage/img/vendors/vendor-4.png' %}" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-xl-2 col-md-3 col-6 client-logo">
+                        <img src="{% static 'homepage/img/vendors/vendor-5.png' %}" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-xl-2 col-md-3 col-6 client-logo">
+                        <img src="{% static 'homepage/img/vendors/vendor-6.png' %}" class="img-fluid" alt="">
+                    </div>
+                
+                </div>
+
+            </div>
+
+        </section><!-- End Clients Section -->
+
+        <!-- About Section - Home Page -->
+        <section id="about" class="about">
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                <div class="row align-items-xl-center gy-5">
+
+                    <div class="col-xl-5 content">
+                        <h3>درباره ما</h3>
+                        <h2>شرکت آرتا شبکه صنعت رایان</h2>
+                        <p>در سال ۱۳۹۰ با نام <strong>آرتا شبکه هوشمند قشم</strong> در جزیره‌ی زیبای قشم متولد شد و به ارائه خدمات شبکه و وایرلس به <strong>منطقه آزاد قشم</strong> و <strong>مرکز رشد قشم</strong> پرداخت.</p>
+                        <p>در سال ۱۴۰۰ و با تصمیم مدیران و به منظور توسعه حوزه فعالیت شرکت، با تغییر نام به <strong>آرتا شبکه صنعت رایان</strong> به تهران منتقل گردید. </p>
+                        <p>از مشتریان عمده شرکت می‌توان <strong>شرکت لبنیات کاله</strong> و <strong>شرکت مهندسی موتور و تجهیزات هوائی ایرانیان</strong> وابسته به <strong>شرکت مدیریت پروژه‌های نیروگاهی ایران (مپنا)</strong> را نام برد.</p>
+                    </div>
+
+                    <div class="col-xl-7">
+                        <div class="row gy-4 icon-boxes">
+
+                            <div class="col-md-6 data-aos=fade-up" data-aos-delay="200">
+                                <div class="icon-box">
+                                    <i class="bi bi-router"></i>
+                                    <h3>تجهیزات شبکه و وایرلس</h3>
+                                    <p>دکل مهاری، محصولات اکتیو و پسیو، ارتباطات وایرلس، دوربین مداربسته، تجهیزات VoIP</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 data-aos=fade-up" data-aos-delay="300">
+                                <div class="icon-box">
+                                    <i class="bi bi-terminal"></i>
+                                    <h3>خدمات نرم‌افزاری</h3>
+                                    <p>مجازی‌سازی، سیستم عامل سرور، فایروال، Active Directory، سرور Exchange، سرور SharePoint</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 data-aos=fade-up" data-aos-delay="400">
+                                <div class="icon-box">
+                                    <i class="bi bi-filetype-html"></i>
+                                    <h3>طراحی سایت</h3>
+                                    <p>سایت کاتالوگی و فروشگاهی با امکانات کامل و متصل به درگاه پرداخت و پیامک</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 data-aos=fade-up" data-aos-delay="500">
+                                <div class="icon-box">
+                                    <i class="bi bi-google-play"></i>
+                                    <h3>تولید اپلیکیشن</h3>
+                                    <p>انواع اپلیکیشن تحت Android و iOS همراه با انتشار در Google Play و App Store</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section><!-- End About Section -->
+
+    </main>
+{% endblock %}
