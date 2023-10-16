@@ -1,0 +1,7 @@
+{
+    "platform": "django",
+    "app": "artanetwork-com",
+    "django": {
+        "pythonVersion": "3.11"
+    }
+}
