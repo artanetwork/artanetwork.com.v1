@@ -12,7 +12,7 @@
   --default-color: #212529;
   --default-color-rgb: 33, 37, 41;
   --primary-color: #ff8d00;
-  --primary-color-rgb: 232, 69, 69;
+  --primary-color-rgb: 255, 141, 0;
   --secondary-color: #32353a;
   --secondary-color-rgb: 50, 53, 58;
   --contrast-color: #ffffff;
@@ -100,11 +100,11 @@ section {
 }
 
 .section-title h2:before {
-  margin: 0 15px 10px 0;
+  margin: 0 0px 10px 15px;
 }
 
 .section-title h2:after {
-  margin: 0 0 10px 15px;
+  margin: 0 15px 10px 0;
 }
 
 .section-title p {
@@ -711,7 +711,7 @@ section {
   border: 1px solid rgba(var(--default-color-rgb), 0.5);
   font-size: 16px;
   color: rgba(var(--default-color-rgb), 0.5);
-  margin-right: 10px;
+  margin-left: 10px;
   transition: 0.3s;
 }
 
@@ -847,6 +847,19 @@ section {
   background: #fff;
   box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.1);
 }
+
+.hero .sent-message {
+  display: none;
+  color: #ffffff;
+  background: var(--primary-color);
+  text-align: center;
+  padding: 15px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  border-radius: 7px;
+  font-weight: 600;
+}
+
 
 .hero .sign-up-form .form-control {
   border: none;
@@ -1028,7 +1041,7 @@ section {
   --background-color: #000000;
   --background-color-rgb: 0, 0, 0;
   position: relative;
-  padding: 120px 0;
+  padding: 60px 0;
 }
 
 .stats img {
@@ -1056,7 +1069,7 @@ section {
 }
 
 .stats .stats-item {
-  padding: 30px;
+  padding: 15px;
   width: 100%;
 }
 
@@ -1108,7 +1121,7 @@ section {
   width: 48px;
   height: 48px;
   position: relative;
-  margin-right: 50px;
+  margin-left: 50px;
   line-height: 0;
 }
 
@@ -1129,7 +1142,7 @@ section {
   border-radius: 50px;
   z-index: 1;
   bottom: -15px;
-  right: -15px;
+  right: 30px;
   transition: 0.3s;
 }
 
@@ -1963,7 +1976,7 @@ section {
 .contact .php-email-form .sent-message {
   display: none;
   color: #ffffff;
-  background: #059652;
+  background: var(--primary-color);
   text-align: center;
   padding: 15px;
   margin-bottom: 24px;

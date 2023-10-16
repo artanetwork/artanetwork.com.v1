@@ -25,6 +25,7 @@
 
         <!-- Template CSS Files -->
         <link rel="stylesheet" href="{% static 'css/main.css' %}">
+
     </head>
 
     <body class="index-page" data-bs-spy="scroll" data-bs-target="#navmenu">
@@ -40,20 +41,77 @@
                 <!-- Nav Menu -->
                 <nav id="navmenu" class="navmenu">
                     <ul>
-                        <li><a href="#" class="active">خانه</a></li>
-                        <li><a href="#">سخت‌افزار شبکه</a></li>
-                        <li><a href="#">خدمات نرم افزاری</a></li>
-                        <li><a href="#">وبلاگ</a></li>
+                        <li><a href="{% url 'homepage:index' %}" class="active">خانه</a></li>
+                        <li><a href="{% url 'homepage:index' %}#about">درباره ما</a></li>
+                        <li><a href="{% url 'homepage:index' %}#tower">دکل مخابراتی</a></li>
+                        <li><a href="{% url 'homepage:index' %}#hardware">سخت‌افزار شبکه</a></li>
+                        <li><a href="{% url 'homepage:index' %}#software">خدمات نرم‌افزاری</a></li>
                     </ul>
                     <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
                 </nav><!-- End Nav Menu -->
 
-                <a class="btn-getstarted" href="#">تماس با ما</a>
+                <a class="btn-getstarted" href="{% url 'homepage:index' %}#contact">تماس با ما</a>
                 
             </div>
         </header><!-- End Header-->
 
         {% block content %}{% endblock %}
+
+        <!-- ======= Footer ======= -->
+        <footer id="footer" class="footer">
+
+            <div class="container footer-top">
+                <div class="row gy-4">
+                    <div class="col-lg-5 col-md-12 footer-about">
+                        <a href="{% url 'homepage:index' %}" class="logo d-flex align-items-center">
+                            <span>آرتا شبکه</span>
+                        </a>
+                        <p>ارائه‌دهنده خدمات دکل مهاری، شبکه، سرور، نرم‌افزار، دوربین، امنیت، VoIP، طراحی سایت و تولید اپلیکیشن</p>
+                        <div class="social-links d-flex mt-4">
+                            <a href="https://instagram.com/arta_network" target="_blank"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-whatsapp"></i></a>
+                            <a href="#"><i class="bi bi-telegram"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-6 footer-links">
+                        <h4>خدمات ما</h4>
+                        <ul>
+                            <li><a href="{% url 'homepage:index' %}#tower">دکل مخابراتی</a></li>
+                            <li><a href="{% url 'homepage:index' %}#hardware">سخت‌افزار شبکه</a></li>
+                            <li><a href="{% url 'homepage:index' %}#software">خدمات نرم‌افزاری</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+                        <h4>تماس با ما</h4>
+                        <p>میدان هفت تیر، خیابان مشاهیر، خیابان زیبا، خیابان مروارید، پلاک ۴، واحد ۲</p>
+                        <p class="mt-4"><strong>تلفن:</strong> <span>۰۲۱-۹۲۰۰۱۳۹۲</span></p>
+                        <p><strong>ایمیل:</strong> <span>info@artanetwork.com</span></p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container copyright text-center mt-4">
+                <p>تمامی حقوق برای آرتا شبکه صنعت رایان محفوظ است. نقل مطالب با ذکر منبع آزاد است.</p>
+                <div class="credits">
+                    طراحی و اجرا توسط آرتا شبکه صنعت رایان
+                </div>
+            </div>
+
+        </footer><!-- End Footer -->
+
+        <!-- Scroll Top Button -->
+        <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+        <!-- Preloader -->
+        <div id="preloader">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
 
         <!-- Vendor JS Files -->
         <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
@@ -66,5 +124,8 @@
 
         <!-- Template JS Files -->
         <script src="{% static 'js/main.js' %}"></script>
+        <script src="{% static 'js/load.csrf.token.js' %}"></script>
+        <script src="{% static 'js/submit.contact.form.js' %}"></script>
+        <script src="{% static 'homepage/js/save.newsletter.signup.js' %}"></script>
     </body>
 </html>

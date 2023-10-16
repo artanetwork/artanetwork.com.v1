@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
         : scrollTop.classList.remove("active");
     }
   }
-  /*
+
   scrollTop.addEventListener("click", (e) => {
     e.preventDefault();
     window.scrollTo({
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
       behavior: "smooth",
     });
   });
-  */
+
   window.addEventListener("load", toggleScrollTop);
   document.addEventListener("scroll", toggleScrollTop);
 
