@@ -1,0 +1,461 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}آرتا شبکه | دکل مهاری، سخت‌افزار شبکه، سوئیچ و روتر، VoIP، دوربین مداربسته، طراحی سایت، توسعه اپلیکیشن{% endblock %}
+
+{% block content %}
+    <main id="main">
+
+        <!-- Hero Section - Homepage -->
+        <section id="hero" class="hero">
+
+            <img src="{% static 'homepage/img/hero-bg.png' %}" alt="" data-aos="fade-in">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10">
+                        <h2 data-aos="fade-up" data-aos-delay="100">راهکارهای پیشرو برای کسب‌وکار شما</h2>
+                        <p data-aos="fade-up" data-aos-delay="200">ما ارائه دهنده خدمات دکل مهاری، شبکه، سرور، نرم‌افزار، دوربین، امنیت ،VoIP، طراحی سایت و تولید اپلیکیشن هستیم</p>
+                    </div>
+                    <div class="col-lg-5">
+                        <form id="newsletterSignupForm" action="#" class="sign-up-form d-flex" data-aos="fade-up" data-aos-delay="300">
+                            <input type="email" id="email" class="form-control" placeholder="نشانی ایمیل شما" required>
+                            <input type="submit" class="btn btn-primary" value="ثبت نام خبرنامه">
+                        </form>
+                        <div class="sent-message" id="signupNewsletter">ثبت نام شما انجام شد. سپاسگزاریم!</div>
+                    </div>
+                </div>
+            </div>
+
+        </section><!-- End Hero Section -->
+
+        <!-- Clients Section - Home Page -->
+        <section id="clients" class="clients">
+
+            <div class="container-fluid" data-aos="fade-up">
+
+                <div class="row gy-4">
+
+                    <div class="col-xl-2 col-md-3 col-6 client-logo">
+                        <img src="{% static 'homepage/img/vendors/vendor-1.png' %}" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-xl-2 col-md-3 col-6 client-logo">
+                        <img src="{% static 'homepage/img/vendors/vendor-2.png' %}" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-xl-2 col-md-3 col-6 client-logo">
+                        <img src="{% static 'homepage/img/vendors/vendor-3.png' %}" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-xl-2 col-md-3 col-6 client-logo">
+                        <img src="{% static 'homepage/img/vendors/vendor-4.png' %}" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-xl-2 col-md-3 col-6 client-logo">
+                        <img src="{% static 'homepage/img/vendors/vendor-5.png' %}" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-xl-2 col-md-3 col-6 client-logo">
+                        <img src="{% static 'homepage/img/vendors/vendor-6.png' %}" class="img-fluid" alt="">
+                    </div>
+                
+                </div>
+
+            </div>
+
+        </section><!-- End Clients Section -->
+
+        <!-- About Section - Home Page -->
+        <section id="about" class="about">
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                <div class="row align-items-xl-center gy-5">
+
+                    <div class="col-xl-5 content">
+                        <h3>درباره ما</h3>
+                        <h2>شرکت آرتا شبکه صنعت رایان</h2>
+                        <p>در سال ۱۳۹۰ با نام <strong>آرتا شبکه هوشمند قشم</strong> در جزیره‌ی زیبای قشم متولد شد و به ارائه خدمات شبکه و وایرلس به <strong>منطقه آزاد قشم</strong> و <strong>مرکز رشد قشم</strong> پرداخت.</p>
+                        <p>در سال ۱۴۰۰ و با تصمیم مدیران و به منظور توسعه حوزه فعالیت شرکت، با تغییر نام به <strong>آرتا شبکه صنعت رایان</strong> به تهران منتقل گردید. </p>
+                        <p>از مشتریان عمده شرکت می‌توان <strong>شرکت لبنیات کاله</strong> و <strong>شرکت مهندسی موتور و تجهیزات هوائی ایرانیان</strong> وابسته به <strong>شرکت مدیریت پروژه‌های نیروگاهی ایران (مپنا)</strong> را نام برد.</p>
+                    </div>
+
+                    <div class="col-xl-7">
+                        <div class="row gy-4 icon-boxes">
+
+                            <div class="col-md-6 data-aos=fade-up" data-aos-delay="200">
+                                <div class="icon-box">
+                                    <i class="bi bi-router"></i>
+                                    <h3>تجهیزات شبکه و وایرلس</h3>
+                                    <p>دکل مهاری، محصولات اکتیو و پسیو، ارتباطات وایرلس، دوربین مداربسته، تجهیزات VoIP</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 data-aos=fade-up" data-aos-delay="300">
+                                <div class="icon-box">
+                                    <i class="bi bi-terminal"></i>
+                                    <h3>خدمات نرم‌افزاری</h3>
+                                    <p>مجازی‌سازی، سیستم عامل سرور، فایروال، Active Directory، سرور Exchange، سرور SharePoint، آنتی ویروس، بکاپ اطلاعات</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 data-aos=fade-up" data-aos-delay="400">
+                                <div class="icon-box">
+                                    <i class="bi bi-filetype-html"></i>
+                                    <h3>طراحی سایت</h3>
+                                    <p>سایت کاتالوگی و فروشگاهی با امکانات کامل، پنل ادمین و متصل به درگاه پرداخت و پیامک</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 data-aos=fade-up" data-aos-delay="500">
+                                <div class="icon-box">
+                                    <i class="bi bi-google-play"></i>
+                                    <h3>تولید اپلیکیشن</h3>
+                                    <p>انواع اپلیکیشن تحت Android و iOS همراه با انتشار در Google Play و App Store</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section><!-- End About Section -->
+
+        <!-- Stats Section - Home Page -->
+        <section id="stats" class="stats">
+
+            <img src="{% static 'homepage/img/stats-bg.jpg' %}" data-aos="fade-in" alt="">
+
+            <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="row gy-4">
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stats-item text-center w-100 h-100">
+                            <span data-purecounter-start="0" data-purecounter-end="57" data-purecounter-duration="1" class="purecounter"></span>
+                            <p>مشتری راضی</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stats-item text-center w-100 h-100">
+                            <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+                            <p>پروژه انجام شده</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stats-item text-center w-100 h-100">
+                            <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
+                            <p>ساعت پشتیبانی</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="stats-item text-center w-100 h-100">
+                            <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
+                            <p>پرسنل متخصص</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section><!-- End Stats Section -->
+
+        <!-- Tower Section - Home Page -->
+        <section id="tower" class="services">
+
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2>انواع دکل مخابراتی</h2>
+                <p>برای انواع ارتباطات رادیوئی</p>
+            </div><!-- End Section Title -->
+
+            <div class="container">
+
+                <div class="row gy-4">
+
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-item d-flex">
+                            <div class="icon flex-shrink-0"><i class="bi bi-broadcast-pin"></i></div>
+                            <div>
+                                <h4 class="title"><a href="#" class="stretched-link">دکل خودایستا</a></h4>
+                                <p class="description">سه پایه و چهار پایه برای بار زیاد و ارتفاع بیش از ۲۴ متر نظیر آنتن مایکروویو، موبایل و بی‌سیم</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-item d-flex">
+                            <div class="icon flex-shrink-0"><i class="bi bi-broadcast"></i></div>
+                            <div>
+                                <h4 class="title"><a href="#" class="stretched-link">دکل مهاری</a></h4>
+                                <p class="description">در انواع G35 و G45 برای تحمل بار کم و ارتفاع تا ۷۲ متر نظیر آنتن مایکروویو</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            
+            </div>
+
+        </section><!-- End Tower Section -->
+
+        <!-- Hardware Section - Home Page -->
+        <section id="hardware" class="services">
+
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2>سخت‌افزار شبکه</h2>
+                <p>تجهیزات اکتیو و پسیو، مودم، و دوربین مداربسته</p>
+            </div><!-- End Section Title -->
+
+            <div class="container">
+
+                <div class="row gy-4">
+
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-item d-flex">
+                            <div class="icon flex-shrink-0"><i class="bi bi-server"></i></div>
+                            <div>
+                                <h4 class="title"><a href="#" class="stretched-link">سرور و تین کلاینت</a></h4>
+                                <p class="description">انواع سرور و تین کلاینت HP، Dell و VMware با کانفیگ موردنیاز شما</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-item d-flex">
+                            <div class="icon flex-shrink-0"><i class="bi bi-router"></i></div>
+                            <div>
+                                <h4 class="title"><a href="#" class="stretched-link">سوئیچ و روتر</a></h4>
+                                <p class="description">محصولات متنوع سیسکو و میکروتیک و ماژول‌های مربوطه</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service-item d-flex">
+                            <div class="icon flex-shrink-0"><i class="bi bi-headset"></i></div>
+                            <div>
+                                <h4 class="title"><a href="#" class="stretched-link">تلفن VoIP</a></h4>
+                                <p class="description">گیت‌وی، مرکز تلفن، گوشی و هدست</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+                        <div class="service-item d-flex">
+                            <div class="icon flex-shrink-0"><i class="bi bi-webcam"></i></div>
+                            <div>
+                                <h4 class="title"><a href="#" class="stretched-link">دوربین مداربسته</a></h4>
+                                <p class="description">محصولات تحت شبکه آنالوگ و دیجیتال Dahua و Hikvision</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+                        <div class="service-item d-flex">
+                            <div class="icon flex-shrink-0"><i class="bi bi-wifi"></i></div>
+                            <div>
+                                <h4 class="title"><a href="#" class="stretched-link">ارتباطات وایرلس</a></h4>
+                                <p class="description">مودم و اکسس پوینت و لوازم جانبی</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="600">
+                        <div class="service-item d-flex">
+                            <div class="icon flex-shrink-0"><i class="bi bi-printer"></i></div>
+                            <div>
+                                <h4 class="title"><a href="#" class="stretched-link">لوازم جانبی</a></h4>
+                                <p class="description">کارت شبکه، منبع تغذیه اضطراری، ذخیره‌سازی تحت شبکه، ماشین‌های اداری</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+
+            </div>
+
+        </section><!-- End Hardware Section -->
+
+        <!-- Software Section - Home Page -->
+        <section id="software" class="services">
+
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2>خدمات نرم‌افزاری</h2>
+                <p>لایسنس، نصب و پیکربندی</p>
+            </div><!-- End Section Title -->
+
+            <div class="container">
+
+                <div class="row gy-4">
+
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-item d-flex">
+                            <div class="icon flex-shrink-0"><i class="bi bi-windows"></i></div>
+                            <div>
+                                <h4 class="title"><a href="#" class="stretched-link">سیستم عامل</a></h4>
+                                <p class="description">ویندوز ۲۰۱۹ و ۲۰۲۲، ویندوز ۱۰ و ۱۱، مجموعه Office، پیکربندی Active Directory</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-item d-flex">
+                            <div class="icon flex-shrink-0"><i class="bi bi-hdd-stack"></i></div>
+                            <div>
+                                <h4 class="title"><a href="#" class="stretched-link">مجازی‌سازی</a></h4>
+                                <p class="description">بر مبنای تکنولوژی ESXi و Hyper-V</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service-item d-flex">
+                            <div class="icon flex-shrink-0"><i class="bi bi-bug"></i></div>
+                            <div>
+                                <h4 class="title"><a href="#" class="stretched-link">حفاظت از داده‌ها</a></h4>
+                                <p class="description">آنتی‌ویروس رایانه و تحت شبکه، پشتیبان‌گیری از اطلاعات</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+                        <div class="service-item d-flex">
+                            <div class="icon flex-shrink-0"><i class="bi bi-envelope"></i></div>
+                            <div>
+                                <h4 class="title"><a href="#" class="stretched-link">سرور ایمیل سازمانی</a></h4>
+                                <p class="description">تحت Microsoft Exchange، MDaemon و MailEnable</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+                        <div class="service-item d-flex">
+                            <div class="icon flex-shrink-0"><i class="bi bi-filetype-jsx"></i></div>
+                            <div>
+                                <h4 class="title"><a href="#" class="stretched-link">طراحی سایت</a></h4>
+                                <p class="description">سایت کاتالوگی و فروشگاهی تحت فریمورک React و Django با امکانات کامل</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="600">
+                        <div class="service-item d-flex">
+                            <div class="icon flex-shrink-0"><i class="bi bi-android2"></i></div>
+                            <div>
+                                <h4 class="title"><a href="#" class="stretched-link">تولید اپلیکیشن</a></h4>
+                                <p class="description">انواع اپلیکیشن تحت Android و iOS و انتشار در Google Play و App Store</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+
+            </div>
+
+        </section><!-- End Software Section -->
+
+        <!-- Contact Section - Home Page -->
+        <section id="contact" class="contact">
+
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2>تماس با ما</h2>
+                <p>جهت دریافت مشاوره در زمینه محصولات و خدمات متنوع ما، با ما در تماس باشید. اطلاعات شما محفوظ خواهند ماند.</p>
+                <p>تمام فیلدها الزامی هستند</p>
+            </div>
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="row gy-4">
+
+                    <div class="col-lg-6">
+
+                        <div class="row gy-4">
+                            <div class="col-md-6">
+                                <div class="info-item" data-aos="fade" data-aos-delay="200">
+                                    <i class="bi bi-geo-alt"></i>
+                                    <h3>نشانی</h3>
+                                    <p>میدان هفت تیر، خیابان مشاهیر، خیابان زیبا، خیابان مروارید، پلاک ۴، واحد ۲</p>
+                                    <p>&nbsp;</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="info-item" data-aos="fade" data-aos-delay="300">
+                                    <i class="bi bi-telephone"></i>
+                                    <h3>شماره تماس</h3>
+                                    <p>۰۲۱-۹۲۰۰۱۳۹۲</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="info-item" data-aos="fade" data-aos-delay="400">
+                                    <i class="bi bi-envelope"></i>
+                                    <h3>پست الکترونیک</h3>
+                                    <p>info@artanetwork.com</p>
+                                    <p>&nbsp;</p>
+                                    <p>&nbsp;</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="info-item" data-aos="fade" data-aos-delay="500">
+                                    <i class="bi bi-clock"></i>
+                                    <h3>ساعات کار</h3>
+                                    <p>شنبه تا چهارشنبه ۹ تا ۱۷</p>
+                                    <p>پنجشنبه ۹ تا ۱۲</p>
+                                    <p>&nbsp;</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-6">
+                        <form action="" id="contactForm" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+                            {% csrf_token %}
+                            <div class="row gy-4">
+
+                                <div class="col-md-6">
+                                    <input type="text" name="name" id="name" class="form-control" placeholder="نام شما" required>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <input type="text" name="phone" id="phone" class="form-control" placeholder="شماره همراه (09123456789)" required pattern="^(0|\+98)9(90|0[1-5]|[1 3]\d|2[0-2]|98)\d{7}$">
+                                </div>
+
+                                <div class="col-md-12">
+                                    <input type="text" name="subject" id="subject" class="form-control" placeholder="موضوع" required>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <textarea class="form-control" name="message" id="message" rows="6" placeholder="پیام شما" required></textarea>
+                                </div>
+
+                                <div class="col-md-12 text-center">
+                                    <div class="loading" id="loading">در حال ارسال</div>
+                                    <div class="error-message" id="error-message"></div>
+                                    <div class="sent-message" id="sent-message">پیام شما ارسال شد. سپاسگزاریم!</div>
+
+                                    <button type="submit">ارسال پیام</button>
+                                </div>
+                            
+                            </div>
+                        </form>
+                    </div>
+                
+                </div>
+            
+            </div>
+        
+        </section><!-- End Contact Section -->
+
+    </main>
+{% endblock %}
