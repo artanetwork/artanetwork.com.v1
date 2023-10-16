@@ -133,7 +133,29 @@ STATICFILES_DIRS = [BASE_DIR / 'assets/', ]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-if os.getenv('debug') == 'false':
+
+# SSL/TLS Settings
+# https://docs.djangoproject.com/en/4.2/topics/security/#ssl-https
+
+CORS_REPLACE_HTTPS_REFERER = True
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+SECURE_FRAME_DENY = True
+
+
+# Content Security Policy
+# https://django-csp.readthedocs.io/en/latest/configuration.html
+
+CSP_DEFAULT_SRC = ["'none'"]
+CSP_IMG_SRC = ["'self'"]
+CSP_STYLE_SRC = ["'self'", "'unsafe-inline'"]
+CSP_STYLE_SRC_ELEM = ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com"]
+CSP_SCRIPT_SRC_ELEM = ["'self'", "'unsafe-inline'"]
+CSP_FONT_SRC = ["'self'", "data:", "https://fonts.googleapis.com", "https://fonts.gstatic.com"]
+
+
+if os.environ.get('DEBUG')== 'false':
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql',
