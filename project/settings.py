@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'corsheaders',
     'accounts.apps.AccountsConfig',
     'homepage.apps.HomepageConfig',
     'support.apps.SupportConfig',
@@ -52,6 +53,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'csp.middleware.CSPMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
 
 ROOT_URLCONF = 'project.urls'
@@ -155,6 +157,20 @@ CSP_STYLE_SRC = ["'self'", "'unsafe-inline'"]
 CSP_STYLE_SRC_ELEM = ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com"]
 CSP_SCRIPT_SRC_ELEM = ["'self'", "'unsafe-inline'"]
 CSP_FONT_SRC = ["'self'", "data:", "https://fonts.googleapis.com", "https://fonts.gstatic.com"]
+
+CORS_ALLOWED_ORIGINS = [
+    'https://artanetwork.com',
+    'https://www.artanetwork.com',
+]
+
+CORS_ALLOWED_METHODS = [
+    'DELETE',
+    'GET',
+    'OPTIONS',
+    'PATCH',
+    'POST',
+    'PUT',
+]
 
 
 if os.environ.get('DEBUG')== 'false':
