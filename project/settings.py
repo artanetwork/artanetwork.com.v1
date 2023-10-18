@@ -38,11 +38,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sitemaps',
+    'django.contrib.sites',
     'corsheaders',
     'accounts.apps.AccountsConfig',
     'homepage.apps.HomepageConfig',
     'support.apps.SupportConfig',
 ]
+
+SITE_ID = 1
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -141,7 +145,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # SSL/TLS Settings
 # https://docs.djangoproject.com/en/4.2/topics/security/#ssl-https
 
-CORS_REPLACE_HTTPS_REFERER = True
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
 SECURE_HSTS_INCLUDE_SUBDOMAINS = True
